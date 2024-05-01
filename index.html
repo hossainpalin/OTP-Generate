@@ -10,16 +10,26 @@
   </head>
   <body>
     <div id="otp-box-container">
-      <h1>Enter OTP</h1>
-      <div id="otp-box-list">
-        <input class="otp-box" type="text" maxlength="1" />
-        <input class="otp-box" type="text" maxlength="1" />
-        <input class="otp-box" type="text" maxlength="1" />
-        <input class="otp-box" type="text" maxlength="1" />
+      <!-- otp box heading -->
+      <div class="heading">
+        <img src="./assets//shield-icon.png" alt="shield-icon" />
+        <h1>OTP Verification</h1>
+        <p>OTP Generate With Vanilla JavaScript</p>
       </div>
-      <p class="generate-otp">_ _ _</p>
-      <p class="otp-expire"></p>
-      <p class="otp-validate-message"></p>
+
+      <!-- otp box content -->
+      <div class="content">
+        <p class="otp-expire">OTP Expire in _ _ seconds</p>
+        <div id="otp-box-list">
+          <input class="otp-box" type="text" maxlength="1" />
+          <input class="otp-box" type="text" maxlength="1" />
+          <input class="otp-box" type="text" maxlength="1" />
+          <input class="otp-box" type="text" maxlength="1" />
+        </div>
+        <p class="generate-otp">Your OTP : _ _ _</p>
+
+        <p class="otp-validate-message"></p>
+      </div>
     </div>
   </body>
 </html>
